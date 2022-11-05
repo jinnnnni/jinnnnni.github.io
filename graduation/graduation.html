@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="wrap">
+        <h1 class="clock">00:00:00</h1>
+        <form id="login-form">
+            <div>
+                <input class="inputLogin" type="textbox" placeholder="write your name!"/>
+                <input type="submit" value="login!" id="btn" class="btn btn-secondary btn-sm"/>
+            </div>
+        </form>
+        <br>
+        <div id="hello-user">
+            <h1></h1>
+        </div>
+        <div id="quote">
+            <h2 class="quote" id="quote1"></h2> 
+            <h2 id="quote2"></h2>
+        </div>
+        <div id="weather">
+            <span></span>
+            <span></span>
+        </div>
+        <form id="todo-form">
+            <input class="inputTodo" type="textbox" placeholder="write a to do and press enter!" required/>
+            <input type="submit" id="todoBtn" value="enter!" class="btn btn-secondary btn-sm"/>
+        </form>
+        <div class="todoList">
+            <ul id="todo-list">
+            </ul>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="src/background.js"></script>
+    <script src="src/clock.js"></script>
+    <script src="src/login.js"></script>
+    <script src="src/todolist.js"></script>
+    <script src="src/quote.js"></script>
+    <script src="src/weather.js"></script>
+</body>
+</html>
